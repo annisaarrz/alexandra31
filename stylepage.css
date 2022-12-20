@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font-family: montserrat;
+	background-image: url("backgroundgunung.jpg");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+nav{
+	background: DarkSlateGrey;
+	height: 160px;
+	width: 100%;
+	text-align: center;
+}
+.konten{
+	background-color: lightgrey;
+	font-size: 500%;
+  width: 90%;
+  height: 100%;
+  padding: 370px;
+  margin: 15% 5% 15%;
+}
+#logo{
+	float: left;
+	padding: 5px 100px;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 100px;
+	margin: 25px 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 120%;
+	padding: 10px 15px;
+	border-radius: 7px;
+	text-transform: uppercase;
+}
+a.active,a:hover{
+	background: #800000;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px
+	margin-right: 40px;
+	cursor: pointer;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+}
+@media (max-width: 858px){
+	nav .checkbtn i{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #191970;
+		top: 80px;
+		left: -100;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover,a.active{
+		background: none;
+		color: #B0C4DE;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
